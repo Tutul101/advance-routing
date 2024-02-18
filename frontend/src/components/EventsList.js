@@ -1,6 +1,7 @@
-import classes from './EventsList.module.css';
+import classes from "./EventsList.module.css";
 
 function EventsList({ events }) {
+  console.log("event list", events);
   return (
     <div className={classes.events}>
       <h1>All Events</h1>
