@@ -1,8 +1,8 @@
 import React from "react";
-import { useParams, json, useLoaderData } from "react-router-dom";
+import { useLoaderData, useRouteLoaderData } from "react-router-dom";
 import EventItem from "../components/EventItem";
 const EventDetail = () => {
-  const data = useLoaderData();
+  const data = useRouteLoaderData("event-detail");
   if (data.isError) {
     return <p>{data.message}</p>;
   }
